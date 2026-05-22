@@ -44,14 +44,8 @@ app.use(cors({
      origin: [
           "http://localhost:5173",
           "http://localhost:5174",
-          // "http://localhost:5175",
-          // "http://10.200.248.198:5174",
-          // "http://localhost:4173",
-          // "https://kreeya.netlify.app",
-          "https://kreeyadesign.com",
-          "https://www.kreeyadesign.com",
-          "https://api.kreeyadesign.com",
-          "https://kreeya-admin.netlify.app"
+          "https://pyush-admin.netlify.app",
+          "https://pyush-user.netlify.app",
      ]
 }));
 
@@ -85,14 +79,9 @@ app.use(express.static(path.join(__dirname, 'dist'), {
 
 // API Routes
 app.use("/api", adminRoutes);
-// app.use("/api", navigationRoutes);
 app.use("/api", imageRoutes);
-// app.use("/api", faqRoutes);
 app.use("/api", blogRoutes);
-// app.use("/api", serviceRoutes);
 app.use("/api", testimonialRoutes);
-// app.use("/api", aboutRoutes);
-// app.use("/api", footerRoutes);
 app.use("/api", serviceRoutes);
 app.use("/api", homeRoutes);
 app.use("/api", faqRoutes);
