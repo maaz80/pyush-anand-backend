@@ -40,7 +40,7 @@ export const verifyOTPAndSubmit = async (req, res) => {
           await transporter.sendMail({
                from: process.env.EMAIL_FROM,
                to: process.env.EMAIL_TO,
-               subject: "New Booking Request - Kreeya",
+               subject: "New Booking Request - Pyush Anand",
                html: `
                     <h2>New Booking Request (Verified)</h2>
                     <table border="1" style="border-collapse:collapse">
